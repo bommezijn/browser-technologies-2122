@@ -2,13 +2,15 @@
   "name": "browser-technologies-2122",
   "version": "1.0.0",
   "description": "HvA CMD Minor Web Design and Development - Browser Technologies 2122",
-  "main": "index.js",
+  "main": "*/src/index.js",
   "private": "true",
   "directories": {
     "example": "examples"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +27,12 @@
   "bugs": {
     "url": "https://github.com/bommezijn/browser-technologies-2122/issues"
   },
-  "homepage": "https://github.com/bommezijn/browser-technologies-2122#readme"
+  "homepage": "https://github.com/bommezijn/browser-technologies-2122#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
