@@ -6,22 +6,6 @@ _Robuuste, toegankelijke websites ontwerpen en maken …_
 
 In het vak Browser Technologies gaan we onderzoeken wat Progressive Enhancement is en hoe je dit kan toepassen om goede, robuuste, toegankelijke websites te maken. Voor iedereen. Het web is voor iedereen, in dit vak leer je hoe je daarvoor kan zorgen.
 
-## Opdrachten
-
-het vak bestaat uit 3 opdrachten. In week 1 werken we aan opdracht 1 en 2. Vanaf week 2 werken we aan de eindopdracht.
-
-### Opdracht 1 🛹 NPM install Progressive- enhancement
-
-Voor de eerste opdracht gaan we onderzoeken wat Progressive Enhancement is.
-
-- [Opdracht 1 - NPM install Progressive Enhancement](assignments/opdracht-1.md)
-
-### Opdracht 2 💔 Breek het Web
-
-Voor opdracht 2 ga je proberen het Web te laten 'breken' door (browser) features bewust uit te zetten. Wat gebeurt er als images, custom fonts, JavaScript, kleur, breedband internet niet optimaal werken?
-
-- [Opdracht 2 - Breek het Web](assignments/opdracht-2.md)
-
 ### Eindopdracht ✨ Progressive Enhanced Browser Technologie
 
 Voor de eindopdracht ontwerp en maak je een interactieve toepassing volgens het principe van Progressive Enhancement. Zorg dat alle gebruikers, met alle browsers, in iedere context de toepassing zo goed mogelijk te zien, horen en/of voelen krijgen. De meest 'enhanced' versie is 'delightful UX', mooi en prettig om te gebruiken.
@@ -36,61 +20,77 @@ Voor de eindopdracht ontwerp en maak je een interactieve toepassing volgens het 
 
 [Rubric](https://icthva.sharepoint.com/:x:/s/FDMCI_EDU_CMD_Minor_Web_Design__Development/ET8k_fDG3VVPvqMkqx2uCusBR5-yeGaKo01meb9bDorLuQ?e=0hbmOk)
 
+## Eindopdracht
+
+Het doel van deze opdracht is te leren hoe je een online interactieve toepassing kan maken met behulp van _Progressive Enhancement_ en _Feature Detection_ zodat die het altijd doet ...
+
+### Uitleg
+
+Maak een demo op basis van een user story. Zorg dat alle gebruikers, met alle browsers, in iedere context minimaal de _core functionaliteit_ te zien/horen/voelen krijgen en maximaal een hele goede user experience.
+
+Bouw je demo in 3 lagen, volgens het principe van _Progressive Enhancement_.
+
+Gebruik als enhancement een [Browser Technologie](https://platform.html5.org) die je gaat onderzoeken op functionaliteit, toegankelijkheid en (browser) ondersteuning.
+Je onderzoekt hoe je verschillende _features_ door verschillende browsers worden ondersteund, hoe je voor goede fallback kan zorgen en je test de _features_ op verschillende browsers <del>en het Device Lab</del>.
+
+Polyfills en NPM packages op de client zijn niet toegestaan, op de server kun je doen wat je wil. Wat voor deze opdracht telt, is de HTML/CSS/JavaScript die aan de browser wordt aangeleverd.
+
+Gebruik [caniuse.com](https://caniuse.com), [html5test.com](https://html5test.com), [css3test.com](http://css3test.com) en [kangax.github.io/compat-table/es6/](https://kangax.github.io/compat-table/es6/)
+
+
+[Rubric](https://docs.google.com/spreadsheets/d/1MV3BWwwg_Zz1n-S_qOM4iSm4gA4M6g0xAxGacyaPuac/)
+### Usecase - enquete
+
+> Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Als ik de enquête niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
+
+#### Vereisten voor de Enquete
+
+- Studentgegevens (naam + nummer) verplicht
+- Per vak 
+	- naam
+	- docent(en)
+	- weken waarin je het vak deed
+	- beoordeling op schaal 1-10 van
+	- lesstof (hoe moeilijk is het)
+	- uitleg (hoe duidelijk is het uitgelegd)
+	- eigen inzicht (hoe goed snap je het)
+	
+- Validatie: alles moet zijn ingevuld voordat je verder mag met het formulier. Geef duidelijke foutmeldingen.
+- Als ik de enquete niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
+
+### opdrachten
+ - [ ] wireflow en/of breakdown-schets met hoe de demo moet gaan werken en hoe hett eruit komt tet zien. Bepaal functional/reliable, usable en pleasurable laag.
+ - [ ] Onderzoek functional / reliable laag naar semantische HTML elementen.
+ - [ ] Kijk voor de usable laag naar gebruiksvriendelijkheid en design patterns die je zou kunnen toepassen
+ - [ ] De meest 'enhanced' versie is super vet, gaaf, en prettig om te gebruiken... dit is de pleasurable laag.
+
+> Voor de eindopdracht telt alleen de HTML CSS JS die aan de browser wordt geserveerd. De server / backend boeit niet.
+
+## Criteria eindopdracht
+- [ ]	Student kan de _Core functionaliteit_ van een use case doorgronden
+- [ ]	Student kan uitleggen wat _Progressive Enhancement_ en _Feature Detection_ is en hoe dit toe te passen in Web Development
+- [ ]	De demo is opgebouwd in 3 lagen, volgens het principe van _Progressive Enhancement_
+- [ ]	De user experience van de demo is goed
+	-	Let op leesbaarheidsregels, contrast en kleuren
+	-	Let op gebruiksvriendelijkheid, zoals affordance en feedback op interactieve elementen
+	-	De meest 'enhanced' versie is super vet, gaaf en h-e-l-e-maal te leuk om te gebruiken
+
+Er is een Readme toegevoegd met daarin:
+- [ ] Een link naar de demo.
+- [ ] Een (wireflow) schets van de functionaliteit met een beschrijving van de core functionality. Geef ook aan wat de functional/reliable, usable en pleasurable laag.
+- [ ] Een beschrijving van de feature(s)/Browser Technologies die in je demo zijn gebruikt en hoe je dit PE hebt toegepast
+- [ ] Een lijst met vier browsers waarin je hebt getest:
+	- voor de desktop 1 Chromium 1 niet-Chromium browser
+	- voor mobiel 1 iOS + 1 Android OF een Samsung- en een niet-Samsung Android)
+- [ ]  een testverslag met
+	- een beschrijving van de feature-lijst die zijn onderzocht
+	- welke browsers de feature(s) wel/niet ondersteunen
+	- welke functionaliteiten zoals JavaScript je aan en uit hebt gezet in de tests
+
+
+<!-- Niet boeiende planning voor mij dan. -->
+<!-- 
 ## Planning & programma
-
-| Planning  | Woensdag  |  Donderdag | Vrijdag  |
-|---|---|---|---|
-| [Week 1](#week-1)  | Intro, College + briefing opdracht 1 | Presentaties opdracht 1, college +  briefing opdracht 2 | Presentaties opdracht 2 |
-| [Week 2](#week-2)  | College + Briefing De eindopdracht  | College + werken aan de opdracht | Feedbackgesprekken  |
-| [Week 3](#week-3)  | College + werken aan de opdracht  |  College + werken aan de opdracht | Beoordelingen!  |
-
-### Week 1
-
-Het web is voor iedereen: Deze week gaan we onderzoeken wat Progressive Enhancement is en kennismaken met testen en het device lab.
-
-#### Woensdag 23 maart
-
-Browser Technolgies begint op woensdag. In het eerste college krijg je uitleg over het programma en over het nut van Progressive Enancement. Wat is dat eigenlijk? De meeste CMD studenten hebben dit waarschijnlijk al eens gehoord en misschien iets mee gedaan in blok Tech. Progressive Enhancement, oftewel PE, is een manier hoe je je de code van een website kan bouwen zodat alle gebruikers met alle browsers je website zo goed mogelijk te zien krijgen. Met PE kun je robuuste websites bouwen die het altijd doen. PE is een manier van denken.
-
-| Woensdag 23/3 | Wat  |
-|---|---|
-| 9:30 | College les 1 over het vak, wie, wat, waar en waarom |
-|  | [Briefing Opdracht 1 🛹 NPM install Progressive-Enhancement](assignments/opdracht-.md) |
-| 16:00 | Checkout in groepjes |
-
-##### Lezen voor les 1 📖
-
-- [Everyone has JavaScript, right? by Stuart Langridge](https://kryogenix.org/code/browser/everyonehasjs.html)
-
-
-#### Donderdag 24 maart
-
-Donderdag gaan we opdracht 1 bekijken en bespreken. Als het goed is heb je een beeld gevormd van Progressive Enhancement. Tijdens de bespreking kun je ook vragen te stellen, samen onderzoeken we wat PE is, waarom het goed is om te begrijpen en misschien kunnen we al wat voorbeelden bespreken hoe je het zou kunnen toepassen.
-
-In het college krijg je uitleg over opdracht 2. Voor deze opdracht ga je proberen het web te laten 'breken' door (browser) features bewust uit te zetten. Wat gebeurt er als images, custom fonts, JavaScript, kleur, breedband internet niet optimaal werken?
-
-🤟 Vandaag geeft [Aaron Gustafson](https://www.aaron-gustafson.com) om 17:00 een gast-college. hij schreef in 2008 het artikel [Understanding Progressive Enhancement](https://alistapart.com/article/understandingprogressiveenhancement/) waarna deze manier van denken een belangrijk onderdeel werd van Web Development. Aaron Gustafson werkt bij Microsoft als 'web standard advocate' met het Edge browser team.
-
-| Donderdag 24/3 | Wat  |
-|---|---|
-| 9:30 | Opdracht 1 bespreken 🛹 |
-| 10:30 | College les 2 over Browser features |
-|  | [Briefing Opdracht 2 💔 Breek het web](assignments/opdracht-2.md) |
-| 16:00 | Checkout per team |
-| 17:00 | Gastcollege Aaron Gustafson 🤟 |
-
-Lezen voor les 2 📖
-
-- [The unreasonable effectiveness of simple HTML by Terence Eden](https://shkspr.mobi/blog/2021/01/the-unreasonable-effectiveness-of-simple-html/)
-
-#### Vrijdag 25 maart
-
-Vrijdag bespreken we opdracht 2. Zorg dat je de bevindingen van je onderzoek online kan presenteren. We gaan de hele feature lijst doorlopen en alle studenten kunnen laten zien wat ze hebben onderzocht, met voorbeelden, de problemen, cijfers en/of meningen. Bedenk ook hoe je de problemen zou kunnen oplossen.
-
-| Vrijdag 25/3 | Wat  |
-|---|---|
-| 9:30 | [Opdracht 2 bespreken](assignments/BT2021-opdracht-2-8-features.pdf) |
-| 16:00 | Work Hard Play Hard |
 
 ### Week 2
 
@@ -100,21 +100,9 @@ In week 2 beginnen we met de eindopdracht. We hebben in week 1 onderzocht wat PE
 
 Woensdag krijg je een briefing van de eindopdracht en een college over browsers, en alles (!) wat daarbij hoort. Daarna gaan we aan de slag: als je een interactieve toepassing ontwerpt die alle gebruikers, met alle browsers moeten kunnen zien, dan zul je moeten bedenken hoe je de toepassing in 3 lagen kan opbouwen, eerst bepaal je de core functionaliteit en de user-delight ... schetsen maar!
 
-| Woensdag 30/3 | Wat  |
-|---|---|
-| 9:30 | Gastcollege van [Vitaly Friedman](https://www.smashingmagazine.com/author/vitaly-friedman/) over interfaces! |
-| 11:15 | [Briefing eindopdracht ✨ Progressive Enhanced Browser Technologie](assignments/eindopdracht.md) |
-| 15:00 | Checkout per team |
-| 16:00 | Weekly Nerd @ Medialounge w/ Vitaly Friedman |
-
 #### Donderdag 31 maart
 
 Donderdag gaan we voorbeelden van PE en feature detection bespreken in een college over form validatie. Daarna aan de slag met je ontwerp, in clubjes gaan we je ontwerpideeën bespreken en bedenken hoe je dit in 3 lagen zou kunnen bouwen.  
-
-| Donderdag 30/3 | Wat  |
-|---|---|
-| 9:30 | College les 3 over Browsers & support detection |
-| 16:00 | Checkouts |
 
 Lezen voor les 4 📖
 
@@ -122,9 +110,4 @@ Lezen voor les 4 📖
 
 #### Vrijdag 1 april
 
-Vrijdag bespreken we in groepjes de vorderingen voor de eindopdracht. Zorg dat je vandaag weet welke browsers (en devices) jij gaat testen.
-
-| Vrijdag 31/3 | Wat  |
-|---|---|
-| 9:30 | Vorderingen bespreken & feedback in groepjes |
-| 16:00 | Work Hard Play Hard |
+Vrijdag bespreken we in groepjes de vorderingen voor de eindopdracht. Zorg dat je vandaag weet welke browsers (en devices) jij gaat testen. -->
