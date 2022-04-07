@@ -2,3 +2,4 @@
 /nogniet/*
 node_modules
 scratchpad.md
+.env

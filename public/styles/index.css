@@ -1,0 +1,15 @@
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Start styling */
+* {
+  font-family: "Open Sans", sans-serif;
+}
