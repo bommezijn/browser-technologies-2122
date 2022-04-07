@@ -55,6 +55,15 @@ Gebruik [caniuse.com](https://caniuse.com), [html5test.com](https://html5test.co
 
 > Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Als ik de enquête niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
 
+### Wireflow
+
+Basis van de wireflow en de logica van de applicatie. Het doel van de applicatie is om een formulier door de gebruiker in te laten vullen, maar ook om te definieëren wat de verschillende lagen zijn.
+
+![browser-technologies-2122-02](https://user-images.githubusercontent.com/13199349/162284429-11cca4b8-919a-4a44-a423-54bd22825349.jpeg)
+![browser-technologies-2122-01](https://user-images.githubusercontent.com/13199349/162284437-cdb3c2aa-650d-4cfa-8fc3-bc46da02f071.jpeg)
+
+<details>
+<summary>requirements & assignments</summary>
 #### Vereisten voor de Enquete
 
 - Studentgegevens (naam + nummer) verplicht
@@ -100,6 +109,8 @@ Er is een Readme toegevoegd met daarin:
   - een beschrijving van de feature-lijst die zijn onderzocht
   - welke browsers de feature(s) wel/niet ondersteunen
   - welke functionaliteiten zoals JavaScript je aan en uit hebt gezet in de tests
+
+</details>
 
 <!-- Niet boeiende planning voor mij dan. -->
 <!--
