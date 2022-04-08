@@ -55,6 +55,10 @@ Gebruik [caniuse.com](https://caniuse.com), [html5test.com](https://html5test.co
 
 > Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Als ik de enquête niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
 
+### Demo
+
+[Link to demo (hosted on heroku so please be patient)](https://enigmatic-shelf-01341.herokuapp.com/)
+
 ### Wireflow
 
 Basis van de wireflow en de logica van de applicatie. Het doel van de applicatie is om een formulier door de gebruiker in te laten vullen, maar ook om te definieëren wat de verschillende lagen zijn.
