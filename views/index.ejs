@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquete Minor Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+  <header>
+    <h1>Minor Web Enquete</h1>
+    <p>Om te begrijpen hoe de studenten over de afgelopen vakken denken vragen wij jou om een vragenlijst in te vullen.
+    </p>
+  </header>
+  <main>
+    <form method="POST" enctype="application/x-www-form-urlencoded" action="/submitSurvey">
+      <section>
+        <h2>Student gegevens</h2>
+        <fieldset data-error="Vul gegevens in die voldoen aan de eisen">
+          <legend>Wat zijn jouw student gegevens?</legend>
+          <label for="studentName">Naam student</label>
+          <input type="text" name="studentName" id="studentName" aria-required="true" aria-label="Naam"
+            pattern="[A-Za-z]+" title="Naam bevat ongeldige tekens" placeholder="Jouw naam" aria-placeholder="Jouw naam"
+            required>
+          <label for="studentId">studentId</label>
+          <input type="number" name="studentId" id="studentId" aria-required="true" aria-label="studentId"
+            pattern="/^[0-9-]{9}\b$/gm+" title="studentnummer klopt niet" placeholder="500123456"
+            aria-placeholder="Jouw Student Id">
+        </fieldset>
+      </section>
+      <section>
+        <header>
+          <h2>Enkele vragen over Web Apps From Scratch</h2>
+        </header>
+        <fieldset data-error="Selecteer een docent">
+          <legend>Welke docent gaf jou les?</legend>
+          <div>
+            <input type="radio" name="teacher_wafs" id="teacher_wafs_1" value="1" required aria-required="true"><label
+              for="teacher_wafs_1">Joost
+              Faber</label>
+          </div>
+          <div>
+            <input type="radio" name="teacher_wafs" id="teacher_wafs_2" value="2"><label for="teacher_wafs_2">Koop
+              Reynders</label>
+          </div>
+        </fieldset>
+      </section>
+      <section>
+        <fieldset data-error="Selecteer de periode waar je het vak volgde">
+          <legend>In welke periode volgde je dit vak?</legend>
+          <label for="period_wafs">Selecteer een periode waar je het vak volgde</label>
+          <select name="period_wafs" id="period_wafs" aria-label="dropdown-week-selector" required aria-required="true">
+            <option value="" selected disabled aria-disabled="true">Kies een periode</option>
+            <option value="1">Week 1 tot 3</option>
+            <option value="2">Week 5 tot 8</option>
+            <option value="3">Week 9 tot 12</option>
+            <option value="4">Week 13 tot 16</option>
+            <option value="5">Week 17 tot 20</option>
+          </select>
+        </fieldset>
+      </section>
+      <section>
+        <fieldset data-error="Geef het vak een cijfer">
+          <legend>Geef WAFS een cijfer op een schaal van 1-10 (laag naar hoog)</legend>
+          <div class="scaleWrapper">
+            <input type="radio" name="rating_wafs" id="rating_wafs_1" value="1" required aria-required="true">
+            <label for="rating_wafs_1">1</label>
+            <input type="radio" name="rating_wafs" id="rating_wafs_2" value="2" required aria-required="true">
+            <label for="rating_wafs_2">2</label>
+            <input type="radio" name="rating_wafs" id="rating_wafs_3" value="3" required aria-required="true">
+            <label for="rating_wafs_3">3</label>
+            <input type="radio" name="rating_wafs" id="rating_wafs_4" value="4" required aria-required="true">
+            <label for="rating_wafs_4">4</label>
+            <input type="radio" name="rating_wafs" id="rating_wafs_5" value="5" required aria-required="true">
+            <label for="rating_wafs_5">5</label>
+            <input type="radio" name="rating_wafs" id="rating_wafs_6" value="6" required aria-required="true">
+            <label for="rating_wafs_6">6</label>
+            <input type="radio" name="rating_wafs" id="rating_wafs_7" value="7" required aria-required="true">
+            <label for="rating_wafs_7">7</label>
+            <input type="radio" name="rating_wafs" id="rating_wafs_8" value="8" required aria-required="true">
+            <label for="rating_wafs_8">8</label>
+            <input type="radio" name="rating_wafs" id="rating_wafs_9" value="9" required aria-required="true">
+            <label for="rating_wafs_9">9</label>
+            <input type="radio" name="rating_wafs" id="rating_wafs_10" value="10" required aria-required="true">
+            <label for="rating_wafs_10">10</label>
+          </div>
+        </fieldset>
+      </section>
+      <section>
+        <fieldset data-error="Selecteer de moeilijkheidsgraad">
+          <legend>Hoe moeilijk was de lesstof?</legend>
+          <label for="difficulty_wafs">Hoe moeilijk was WAFS voor jou?</label>
+          <select id="difficulty_wafs" aria-label="dropdown-difficulty-selector" required aria-required="true"
+            name="difficulty_wafs" id="difficulty_wafs">
+            <option value="" selected disabled aria-disabled="true">Maak een keuze</option>
+            <option value="0">Te makkelijk</option>
+            <option value="1">Makkelijk</option>
+            <option value="2">neutraal</option>
+            <option value="3">Lastig</option>
+            <option value="4">Moeilijk</option>
+            <option value="5">Zeer moeilijk</option>
+          </select>
+        </fieldset>
+      </section>
+      <section>
+        <fieldset data-error="Selecteer hoe duidelijk de uitleg was">
+          <legend>Hoe duidelijk was de lesstof?</legend>
+          <label for="explanation_wafs">Hoe duidelijk was de lesstof?</label>
+          <select id="explanation_wafs" aria-label="dropdown-explanation-selector" required aria-required="true"
+            name="explanation_wafs" id="explanation_wafs">
+            <option value="" selected disabled aria-disabled="true">Maak een keuze</option>
+            <option value="0">super duidelijk</option>
+            <option value="1">duidelijk</option>
+            <option value="2">Ik begrijp het</option>
+            <option value="3">Ik volgde het een beetje</option>
+            <option value="4">De uitleg was obscuur</option>
+            <option value="5">私は何を読んでいますか WTF?!</option>
+          </select>
+        </fieldset>
+      </section>
+      <section>
+        <fieldset data-error="Hoe goed begrijp je het, 1 is niet, 10 is helemaal">
+          <legend>Hoe goed begrijp je het nu?</legend>
+          <div class="scaleWrapper">
+            <input type="radio" name="insight_wafs" id="insight_wafs_1" value="1" required aria-required="true">
+            <label for="insight_wafs_1">1</label>
+            <input type="radio" name="insight_wafs" id="insight_wafs_2" value="2" required aria-required="true">
+            <label for="insight_wafs_2">2</laåbel>
+              <input type="radio" name="insight_wafs" id="insight_wafs_3" value="3" required aria-required="true">
+              <label for="insight_wafs_3">3</label>
+              <input type="radio" name="insight_wafs" id="insight_wafs_4" value="4" required aria-required="true">
+              <label for="insight_wafs_4">4</label>
+              <input type="radio" name="insight_wafs" id="insight_wafs_5" value="5" required aria-required="true">
+              <label for="insight_wafs_5">5</label>
+              <input type="radio" name="insight_wafs" id="insight_wafs_6" value="6" required aria-required="true">
+              <label for="insight_wafs_6">6</label>
+              <input type="radio" name="insight_wafs" id="insight_wafs_7" value="7" required aria-required="true">
+              <label for="insight_wafs_7">7</label>
+              <input type="radio" name="insight_wafs" id="insight_wafs_8" value="8" required aria-required="true">
+              <label for="insight_wafs_8">8</label>
+              <input type="radio" name="insight_wafs" id="insight_wafs_9" value="9" required aria-required="true">
+              <label for="insight_wafs_9">9</label>
+              <input type="radio" name="insight_wafs" id="insight_wafs_10" value="10" required aria-required="true">
+              <label for="insight_wafs_10">10</label>
+          </div>
+        </fieldset>
+      </section>
+
+      <input type="submit" value="submit">
+    </form>
+  </main>
+  <script defer src="script/index.js"></script>
+</body>
+
+</html>

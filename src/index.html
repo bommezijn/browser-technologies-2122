@@ -59,8 +59,12 @@
         <fieldset data-error="Selecteer de periode waar je het vak volgde">
           <legend>In welke periode volgde je dit vak?</legend>
           <label for="period_wafs">Selecteer een periode waar je het vak volgde</label>
-          <select name="period_wafs" id="period_wafs">
-            <option value=""></option>
+          <select name="period_wafs" id="period_wafs" aria-label="dropdown-week-selector" required aria-required="true">
+            <option value="1">Week 1 tot 3</option>
+            <option value="2">Week 5 tot 8</option>
+            <option value="3">Week 9 tot 12</option>
+            <option value="4">Week 13 tot 16</option>
+            <option value="5">Week 17 tot 20</option>
           </select>
         </fieldset>
       </section>
