@@ -1,5 +1,16 @@
 console.warn("Welcome to browser technologies");
 
+const form = document.querySelector('form')
+const formInputElements = document.querySelectorAll('input')
+const btnSubmit = document.querySelector('#submit') || document.getElementById('submit')
+// const formData = new FormData.entries()
+
+
+console.log(formInputElements)
+// if (btnSubmit == undefined) {
+//   btnSubmit = document.getElementById('submit')
+// }
+
 /**
  * @description Check if localStorage is available
  * @param {*} type 
