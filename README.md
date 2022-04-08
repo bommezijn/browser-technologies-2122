@@ -62,6 +62,20 @@ Basis van de wireflow en de logica van de applicatie. Het doel van de applicatie
 ![browser-technologies-2122-02](https://user-images.githubusercontent.com/13199349/162284429-11cca4b8-919a-4a44-a423-54bd22825349.jpeg)
 ![browser-technologies-2122-01](https://user-images.githubusercontent.com/13199349/162284437-cdb3c2aa-650d-4cfa-8fc3-bc46da02f071.jpeg)
 
+### Testing
+
+On which browser does the application run?
+|Browser|Does it work|
+|--|--|
+|Brave (chromium)|✅|
+|Safari (webkit)|✅|
+|iOS|🕑|
+|Android|🕑|
+
+#### Test case
+
+> Yet to be written.
+
 <details>
 <summary>requirements & assignments</summary>
 #### Vereisten voor de Enquete
@@ -80,8 +94,8 @@ Basis van de wireflow en de logica van de applicatie. Het doel van de applicatie
 
 ### opdrachten
 
-- [ ] wireflow en/of breakdown-schets met hoe de demo moet gaan werken en hoe hett eruit komt tet zien. Bepaal functional/reliable, usable en pleasurable laag.
-- [ ] Onderzoek functional / reliable laag naar semantische HTML elementen.
+- [x] wireflow en/of breakdown-schets met hoe de demo moet gaan werken en hoe hett eruit komt tet zien. Bepaal functional/reliable, usable en pleasurable laag.
+- [x] Onderzoek functional / reliable laag naar semantische HTML elementen.
 - [ ] Kijk voor de usable laag naar gebruiksvriendelijkheid en design patterns die je zou kunnen toepassen
 - [ ] De meest 'enhanced' versie is super vet, gaaf, en prettig om te gebruiken... dit is de pleasurable laag.
 
@@ -90,9 +104,9 @@ Basis van de wireflow en de logica van de applicatie. Het doel van de applicatie
 ## Criteria eindopdracht
 
 - [ ] Student kan de _Core functionaliteit_ van een use case doorgronden
-- [ ] Student kan uitleggen wat _Progressive Enhancement_ en _Feature Detection_ is en hoe dit toe te passen in Web Development
+- [x] Student kan uitleggen wat _Progressive Enhancement_ en _Feature Detection_ is en hoe dit toe te passen in Web Development
 - [ ] De demo is opgebouwd in 3 lagen, volgens het principe van _Progressive Enhancement_
-- [ ] De user experience van de demo is goed
+- [x] De user experience van de demo is goed
   - Let op leesbaarheidsregels, contrast en kleuren
   - Let op gebruiksvriendelijkheid, zoals affordance en feedback op interactieve elementen
   - De meest 'enhanced' versie is super vet, gaaf en h-e-l-e-maal te leuk om te gebruiken
@@ -100,7 +114,7 @@ Basis van de wireflow en de logica van de applicatie. Het doel van de applicatie
 Er is een Readme toegevoegd met daarin:
 
 - [ ] Een link naar de demo.
-- [ ] Een (wireflow) schets van de functionaliteit met een beschrijving van de core functionality. Geef ook aan wat de functional/reliable, usable en pleasurable laag.
+- [x] Een (wireflow) schets van de functionaliteit met een beschrijving van de core functionality. Geef ook aan wat de functional/reliable, usable en pleasurable laag.
 - [ ] Een beschrijving van de feature(s)/Browser Technologies die in je demo zijn gebruikt en hoe je dit PE hebt toegepast
 - [ ] Een lijst met vier browsers waarin je hebt getest:
   - voor de desktop 1 Chromium 1 niet-Chromium browser
