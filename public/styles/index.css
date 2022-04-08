@@ -10,6 +10,38 @@ img {
 }
 
 /* Start styling */
+@supports (--css: variables){
+  :root {
+    --background-color: #EAF1F5;
+  }
+}
+
 * {
+  background-color: var(--background-color);
   font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+
+a, p, label, legend, input {
+  font-size: 1.1rem;
+}
+
+header {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+section {
+  padding: 1em 1.5em;
+  background-color: #ffffff;
+  margin-bottom: 1em;
+}
+
+fieldset label {
+  display: block;
 }
