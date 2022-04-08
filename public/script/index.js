@@ -33,6 +33,23 @@ function storageAvailable(type) {
 if (storageAvailable('localStorage')) {
   // Yippee! We can use localStorage awesomeness
   console.log('localStorage is available')
+
+  function getLocalStorage(item) {
+    const data = localStorage.getItem(item)
+    if (!data) return
+    return JSON.parse(data)
+  }
+
+  function getFormData() {
+    let formData = null
+
+    if ('localStorage' in window) {
+      formData = getLocalStorage('formData')
+    }
+
+    return formData
+  }
+
 }
 else {
   // Too bad, no localStorage for us
