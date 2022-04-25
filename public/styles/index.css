@@ -102,9 +102,39 @@ fieldset label {
     -moz-appearance: none;
     width: 0px;
   }
-  .scaleWrapper input[type="radio"]:checked+label {
+
+  fieldset div label[for^="teacher_wafs_"] {
+    padding: 0.5em .25em;
+    /* background-color: #ffcc00; */
+  }
+  fieldset div label[for^="teacher_wafs_"]:hover {
+    background-color: #c1baf8;
+    transition: background-color 100ms ease-in;
+    cursor: pointer;
+  }
+
+  fieldset div input[name^="teacher_wafs"]:checked+label{
+    background-color: #9185f3;
+  }
+
+ /* input[type="radio"]:checked+label {
     background-color: #9185f3;
     border-radius: 50%;
+    border: 1px inset solid black;
+  }
+  label {
+    padding: 0.5em;
+    text-align: center;
+  }
+  label:hover {
+    border-radius: 50%;
+    background-color: #c1baf8;
+    transition: background-color 100ms ease-in;`
+  } */
+
+  .scaleWrapper input[type="radio"]:checked+label {
+    background-color: #9185f3;
+    /* border-radius: 50%; */
     /* border: 1px inset solid black; */
   }
   .scaleWrapper label {
