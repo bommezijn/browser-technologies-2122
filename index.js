@@ -28,17 +28,43 @@ app.post('/submitSurvey', async (request, response) => {
   const path = './public/jason.json'
 
   // Check if jason exists, otherwise return error
-  fs.access(path, fs.F_OK, (err) => {
-    console.error('file does not exist', err)
-    return
-  })
+  // fs.access(path, fs.F_OK, (err) => {
+  //   console.error('file does not exist', err)
+  //   return
+  // })
+  doesFileExist(path)
 
   //Local instance of database aka sketchy JSON files
-  return await fs.writeFile(path, JSON.stringify({ userId: request.body.studentId, userData: request.body }), (err, result) => {
-    if (err) return console.log('error at writing', err)
-    return response.render('confirm')
-  })
+  // return await fs.writeFile(path, JSON.stringify({ userId: request.body.studentId, userData: request.body }), (err, result) => {
+  //   if (err) return console.log('error at writing', err)
+  //   return response.render('confirm')
+  // })
+  saveUser({ userId: request.body.studentId, userData: request.body }) ? response.render('confirm') : console.log('fek something went wrong')
+
 })
+
+function doesFileExist(path) {
+  fs.access(path, fs.constants.F_OK, (err) => {
+    if (!err) {
+      console.log('file exists')
+      return true
+    } else {
+      console.log('file does not exist')
+      return false
+    }
+  })
+}
+
+async function saveUser(data) {
+  let stringified = JSON.stringify(data)
+  const path = './public/jason.json'
+
+  return await fs.writeFile(path, stringified, (err, result) => {
+    if (err) { console.log('error at writing', err); return false }
+    console.log(`user stored in json \n ${stringified}`)
+    return true
+  })
+}
 
 app.listen(PORT, () => {
   console.log(`app listening to localhost:${PORT}`)
