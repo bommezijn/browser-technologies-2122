@@ -27,6 +27,9 @@ app.post('/submitSurvey', async (request, response) => {
   console.log(request.body)
   const path = './public/jason.json'
 
+  const writeStream = fs.createWriteStream(path)
+  request.pipe(writeStream)
+  request.on()
   // Check if jason exists, otherwise return error
   // fs.access(path, fs.F_OK, (err) => {
   //   console.error('file does not exist', err)
@@ -55,6 +58,13 @@ function doesFileExist(path) {
   })
 }
 
+/**
+ * 
+ * @param {*} data xyz yet to be written
+ * @todo Write it with createWriteStream so it adds to the file instead of overwriting
+ * @todo write a check if userId exists, if so update, otherwise add to object
+ * @returns 
+ */
 async function saveUser(data) {
   let stringified = JSON.stringify(data)
   const path = './public/jason.json'
@@ -65,6 +75,7 @@ async function saveUser(data) {
     return true
   })
 }
+
 
 app.listen(PORT, () => {
   console.log(`app listening to localhost:${PORT}`)
