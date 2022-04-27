@@ -63,6 +63,7 @@ function doesFileExist(path) {
  * @param {*} data xyz yet to be written
  * @todo Write it with createWriteStream so it adds to the file instead of overwriting
  * @todo write a check if userId exists, if so update, otherwise add to object
+ * @see https://nodejs.org/en/knowledge/advanced/streams/how-to-use-fs-create-write-stream/
  * @returns 
  */
 async function saveUser(data) {
