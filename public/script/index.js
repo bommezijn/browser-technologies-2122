@@ -3,13 +3,8 @@ console.warn("Welcome to browser technologies");
 const form = document.querySelector('form')
 const formInputElements = document.querySelectorAll('input')
 const btnSubmit = document.querySelector('#submit') || document.getElementById('submit')
+const btnTestSubmit = document.querySelector('#test-submit') || document.getElementById('test-submit')
 // const formData = new FormData.entries()
-
-
-console.log(formInputElements)
-// if (btnSubmit == undefined) {
-//   btnSubmit = document.getElementById('submit')
-// }
 
 /**
  * @description Check if localStorage is available
@@ -41,28 +36,71 @@ function storageAvailable(type) {
       (storage && storage.length !== 0);
   }
 }
+
 if (storageAvailable('localStorage')) {
   // Yippee! We can use localStorage awesomeness
   console.log('localStorage is available')
-
-  function getLocalStorage(item) {
-    const data = localStorage.getItem(item)
-    if (!data) return
-    return JSON.parse(data)
-  }
-
-  function getFormData() {
-    let formData = null
-
-    if ('localStorage' in window) {
-      formData = getLocalStorage('formData')
-    }
-
-    return formData
-  }
-
 }
 else {
   // Too bad, no localStorage for us
   console.log('localStorage is unavailable')
 }
+
+//Get item from local storage
+function getLocalStorage(item) {
+  const data = localStorage.getItem(item)
+  if (!data) return
+  return JSON.parse(data)
+}
+
+
+//get formdata
+function getFormData() {
+  let formData = null
+
+  if ('localStorage' in window) {
+    formData = getLocalStorage('formData')
+  }
+
+  return formData
+}
+
+
+
+// const test = {}
+// formInputElements.addEventListener('change', () => {
+//   console.log('input change')
+//   formInputElements.forEach(element => {
+//     test[element.id] = element.value
+//   })
+
+//   localStorage.setItem(test.studentId, JSON.stringify(test))
+// })
+
+// btnTestSubmit.addEventListener('click', () => {
+//   /* What do I want to do?
+//     Get content from the form
+//     create localstorage item, where studentId is key and the rest is value
+//   */
+//   console.log('submitted')
+//   console.log(formInputElements)
+//   const test = {}
+
+//   formInputElements.forEach(element => {
+//     test[element.id] = element.value
+//     // console.log(element.id, element.value)
+//   });
+
+//   console.log('test object', test)
+//   localStorage.setItem(test.studentId, JSON.stringify(test))
+
+//   // for (const val of formData.values()) {
+//   //   console.log(val)
+//   // }
+//   // console.log(test)
+//   // let formData = new FormData(test)
+//   // formData.forEach(element => {
+//   //   console.log(element)
+//   // });
+
+// })
