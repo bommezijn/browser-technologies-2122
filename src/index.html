@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser Technologies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <header>
+    <span>Nathan B</span>
+    <nav>
+      <a href="https://github.com/bommezijn/browser-technologies-2122" accesskey="g">BT2122</a>
+      <a href="https://github.com/cmda-minor-web/browser-technologies-2122" accesskey="h">Minor Web</a>
+    </nav>
+  </header>
+  <main>
+    <section id="introduction">
+      <h1>Minor Web Development enquete</h1>
+      <p>Omdat deze minor ieder jaar wordt gegeven willen de docenten graag weten wat je ervan vondt, hierom vragen wij jullie, de studenten een enquete in te vullen wat jullie ervan vonden.</p>
+      <p>Velden die verplicht zijn hebben een <strong><abbr title="required">*</abbr></strong></p>
+    </section>
+    <article class="container">
+      <form method="" enctype="application/x-www-form-urlencoded" action="">
+        <!-- Persoonlijke gegevens -->
+        <section class="section">
+          <h2>Over jou</h2>
+          <fieldset class="question" class="question">
+            <legend>Studenten informatie</legend>
+            <p>
+            <label for="student_name">
+              <span>Naam: <strong>*</strong></span>
+              <input type="text" name="student_name" id="student_name" aria-required="true" aria-label="Naam van student" pattern="[A-Za-z]+" placeholder="Naam van Student" aria-placeholder="naam van student" required>
+            </label>
+          </p>
+          <p>
+            <label for="student_identification">
+              <span>student id: <strong>*</strong></span>
+              <input type="text" name="student_identification" id="student_identification" aria-required="true" aria-label="id-nummer van student" pattern="[0-9]+" placeholder="id-nummer van Student" aria-placeholder="idnummer van student" required>
+            </label>
+          </p>
+          </fieldset>
+        </section>
+        <!-- Web App From Scratch -->
+        <section class="section">
+          <h2>Web App From Scratch</h2>
+          <fieldset class="question">
+            <legend>In welke periode heb jij Web App From Scratch gevolgd?</legend>
+            <label for="wafs_period_1">
+              <input type="radio" name="wafs_period" id="wafs_period_1" name="wafs_period" value="1" required aria-required="true">
+              <span>
+                Week 1 tot en met 4
+              </span>
+            </label>
+            <label for="wafs_period_2">
+              <input type="radio" name="wafs_period" id="wafs_period_2" name="wafs_period" value="2" required aria-required="true">
+              <span>Week 5 tot en met 9</span>
+            </label>
+
+            <label for="wafs_period_3">
+              <input type="radio" name="wafs_period" id="wafs_period_3" name="wafs_period" value="3" required aria-required="true">
+              <span>Week 10 tot en met 14</span>
+            </label>
+
+            <label for="wafs_period_4">
+              <input type="radio" name="wafs_period" id="wafs_period_4" name="wafs_period" value="4" required aria-required="true">
+              <span>Week 15 tot en met 19</span>
+            </label>
+          </fieldset>
+          <fieldset class="question">
+            <legend>Wie heeft jou beoordeeld tijdens WAFS?</legend>
+            <p>Meerdere antwoorden mogelijk</p>
+            <input type="checkbox" name="wafs_teacher" id="wafs_teacher_1" value="1">
+            <label for="wafs_teacher_1">Joost Faber</label>
+            <input type="checkbox" name="wafs_teacher" id="wafs_teacher_2" value="2">
+            <label for="wafs_teacher_2">Koop Reynders</label>
+          </fieldset>
+          <fieldset class="question">
+            <legend>Wat vond je van Web App From Scratch?</legend>
+            <p>Geef een cijfer tussen één en tien, van laag naar hoog.</p>
+            <div class="scaleWrapper">
+              <input type="radio" name="wafs_rating" id="wafs_rating_1" value="1" required aria-required="true">
+              <label for="wafs_rating_1">1</label>
+
+              <input type="radio" name="wafs_rating" id="wafs_rating_2" value="2">
+              <label for="wafs_rating_2">2</label>
+
+              <input type="radio" name="wafs_rating" id="wafs_rating_3" value="3">
+              <label for="wafs_rating_3">3</label>
+
+              <input type="radio" name="wafs_rating" id="wafs_rating_4" value="4">
+              <label for="wafs_rating_4">4</label>
+
+              <input type="radio" name="wafs_rating" id="wafs_rating_5" value="5">
+              <label for="wafs_rating_5">5</label>
+
+              <input type="radio" name="wafs_rating" id="wafs_rating_6" value="6">
+              <label for="wafs_rating_6">6</label>
+
+              <input type="radio" name="wafs_rating" id="wafs_rating_7" value="7">
+              <label for="wafs_rating_7">7</label>
+
+              <input type="radio" name="wafs_rating" id="wafs_rating_8" value="8">
+              <label for="wafs_rating_8">8</label>
+
+              <input type="radio" name="wafs_rating" id="wafs_rating_9" value="9">
+              <label for="wafs_rating_9">9</label>
+
+              <input type="radio" name="wafs_rating" id="wafs_rating_10" value="10">
+              <label for="wafs_rating_10">10</label>
+
+            </div>
+          </fieldset>
+          <fieldset class="question">
+            <legend>Hoe moeilijk vond je de stof van Web App From Scratch?</legend>
+            <select name="wafs_difficulty" id="wafs_difficulty" required aria-required="true">
+              <option value="" selected aria-selected="false" disabled aria-disabled="true">Geef jouw mening</option>
+              <option value="superEasy">Totaal niet moeilijk</option>
+              <option value="easy">Gemakkelijk</option>
+              <option value="difficult">Lastig</option>
+              <option value="superDifficult">Super moeilijk</option>
+            </select>
+          </fieldset>
+          <fieldset class="question">
+            <legend>begrijp je de lessen die waren gegeven over Web App From Scratch?</legend>
+            <select name="wafs_clarity" id="wafs_clarity" required aria-required="true">
+              <option value="" selected aria-selected="false" disabled aria-disabled="true">Geef jouw mening</option>
+              <option value="1">Lessen waren te makkelijk</option>
+              <option value="2">Lessen waren duidelijk te volgen</option>
+              <option value="3">Lessen waren op maat</option>
+              <option value="4">Lessen waren lastig te volgen</option>
+              <option value="5">Ik begreep de lessen niet</option>
+            </select>
+          </fieldset>
+          <fieldset class="question">
+            <legend>Hoe goed ben jij met de principes van Web App From Scratch?</legend>
+            <p>Geef een cijfer tussen één en tien, van 'ik begrijp het niet' naar 'ik ben een senior developer'.</p>
+            <div class="scaleWrapper">
+              <input type="radio" name="wafs_understanding" id="wafs_understanding_1" value="1" required aria-required="true">
+              <label for="wafs_understanding_1">1</label>
+
+              <input type="radio" name="wafs_understanding" id="wafs_understanding_2" value="2">
+              <label for="wafs_understanding_2">2</label>
+
+              <input type="radio" name="wafs_understanding" id="wafs_understanding_3" value="3">
+              <label for="wafs_understanding_3">3</label>
+
+              <input type="radio" name="wafs_understanding" id="wafs_understanding_4" value="4">
+              <label for="wafs_understanding_4">4</label>
+
+              <input type="radio" name="wafs_understanding" id="wafs_understanding_5" value="5">
+              <label for="wafs_understanding_5">5</label>
+
+              <input type="radio" name="wafs_understanding" id="wafs_understanding_6" value="6">
+              <label for="wafs_understanding_6">6</label>
+
+              <input type="radio" name="wafs_understanding" id="wafs_understanding_7" value="7">
+              <label for="wafs_understanding_7">7</label>
+
+              <input type="radio" name="wafs_understanding" id="wafs_understanding_8" value="8">
+              <label for="wafs_understanding_8">8</label>
+
+              <input type="radio" name="wafs_understanding" id="wafs_understanding_9" value="9">
+              <label for="wafs_understanding_9">9</label>
+
+              <input type="radio" name="wafs_understanding" id="wafs_understanding_10" value="10">
+              <label for="wafs_understanding_10">10</label>
+            </div>
+          </fieldset>
+        </section>
+        <!-- Browser Technologies -->
+        <section class="section">
+          <h2>Browser Technologies</h2>
+          <fieldset class="question">
+            <legend>In welke periode heb jij Browser Technologies gevold?</legend>
+            <label for="bt_period_1">
+              <input type="radio" name="bt_period" id="bt_period_1" name="bt_period" value="1" required aria-required="true">
+              <span>
+                Week 1 tot en met 4
+              </span>
+            </label>
+
+            <label for="bt_period_2">
+              <input type="radio" name="bt_period" id="bt_period_2" name="bt_period" value="2" required aria-required="true">
+              <span>
+                Week 5 tot en met 9</label>
+              </span>
+
+              <label for="bt_period_3">
+              <input type="radio" name="bt_period" id="bt_period_3" name="bt_period" value="3" required aria-required="true">
+              <span>Week 10 tot en met 14</span>
+            </label>
+
+            <label for="bt_period_4">
+              <input type="radio" name="bt_period" id="bt_period_4" name="bt_period" value="4" required aria-required="true">
+              <span>Week 15 tot en met 19</span>
+            </label>
+          </fieldset>
+          <fieldset class="question">
+            <legend>Wie heeft jou beoordeeld tijdens BT?</legend>
+            <p>Meerdere antwoorden mogelijk</p>
+            <input type="checkbox" name="bt_teacher" id="bt_teacher_1" value="1">
+            <label for="bt_teacher_1">Peter Paul Koch</label>
+            <input type="checkbox" name="bt_teacher" id="bt_teacher_2" value="2">
+            <label for="bt_teacher_2">Koop Reynders</label>
+            <input type="checkbox" name="bt_teacher" id="bt_teacher_3" value="3">
+            <label for="bt_teacher_3">Robert Spier</label>
+          </fieldset>
+          <fieldset class="question">
+            <legend>Wat vond je van Browser Technologies?</legend>
+            <p>Geef een cijfer tussen één en tien, van laag naar hoog.</p>
+            <div class="scaleWrapper">
+              <input type="radio" name="bt_rating" id="bt_rating_1" value="1" required aria-required="true">
+              <label for="bt_rating_1">1</label>
+
+              <input type="radio" name="bt_rating" id="bt_rating_2" value="2">
+              <label for="bt_rating_2">2</label>
+
+              <input type="radio" name="bt_rating" id="bt_rating_3" value="3">
+              <label for="bt_rating_3">3</label>
+
+              <input type="radio" name="bt_rating" id="bt_rating_4" value="4">
+              <label for="bt_rating_4">4</label>
+
+              <input type="radio" name="bt_rating" id="bt_rating_5" value="5">
+              <label for="bt_rating_5">5</label>
+
+              <input type="radio" name="bt_rating" id="bt_rating_6" value="6">
+              <label for="bt_rating_6">6</label>
+
+              <input type="radio" name="bt_rating" id="bt_rating_7" value="7">
+              <label for="bt_rating_7">7</label>
+
+              <input type="radio" name="bt_rating" id="bt_rating_8" value="8">
+              <label for="bt_rating_8">8</label>
+
+              <input type="radio" name="bt_rating" id="bt_rating_9" value="9">
+              <label for="bt_rating_9">9</label>
+
+              <input type="radio" name="bt_rating" id="bt_rating_10" value="10">
+              <label for="bt_rating_10">10</label>
+
+            </div>
+          </fieldset>
+          <fieldset class="question">
+            <legend>Hoe moeilijk vond je de stof van Browser Technologies?</legend>
+            <select name="bt_difficulty" id="bt_difficulty" required aria-required="true">
+              <option value="" selected aria-selected="false" disabled aria-disabled="true">Geef jouw mening</option>
+              <option value="superEasy">Totaal niet moeilijk</option>
+              <option value="easy">Gemakkelijk</option>
+              <option value="difficult">Lastig</option>
+              <option value="superDifficult">Super moeilijk</option>
+            </select>
+          </fieldset>
+          <fieldset class="question">
+            <legend>begrijp je de lessen die waren gegeven over Browser Technologies?</legend>
+            <select name="bt_clarity" id="bt_clarity" required aria-required="true">
+              <option value="" selected aria-selected="false" disabled aria-disabled="true">Geef jouw mening</option>
+              <option value="1">Lessen waren te makkelijk</option>
+              <option value="2">Lessen waren duidelijk te volgen</option>
+              <option value="3">Lessen waren op maat</option>
+              <option value="4">Lessen waren lastig te volgen</option>
+              <option value="5">Ik begreep de lessen niet</option>
+            </select>
+          </fieldset>
+          <fieldset class="question">
+            <legend>Hoe goed ben jij met de principes van Browser Technologies?</legend>
+            <p>Geef een cijfer tussen één en tien, van 'ik begrijp het niet' naar 'ik ben een senior developer'.</p>
+            <div class="scaleWrapper">
+              <input type="radio" name="bt_understanding" id="bt_understanding_1" value="1" required aria-required="true">
+              <label for="bt_understanding_1">1</label>
+
+              <input type="radio" name="bt_understanding" id="bt_understanding_2" value="2">
+              <label for="bt_understanding_2">2</label>
+
+              <input type="radio" name="bt_understanding" id="bt_understanding_3" value="3">
+              <label for="bt_understanding_3">3</label>
+
+              <input type="radio" name="bt_understanding" id="bt_understanding_4" value="4">
+              <label for="bt_understanding_4">4</label>
+
+              <input type="radio" name="bt_understanding" id="bt_understanding_5" value="5">
+              <label for="bt_understanding_5">5</label>
+
+              <input type="radio" name="bt_understanding" id="bt_understanding_6" value="6">
+              <label for="bt_understanding_6">6</label>
+
+              <input type="radio" name="bt_understanding" id="bt_understanding_7" value="7">
+              <label for="bt_understanding_7">7</label>
+
+              <input type="radio" name="bt_understanding" id="bt_understanding_8" value="8">
+              <label for="bt_understanding_8">8</label>
+
+              <input type="radio" name="bt_understanding" id="bt_understanding_9" value="9">
+              <label for="bt_understanding_9">9</label>
+
+              <input type="radio" name="bt_understanding" id="bt_understanding_10" value="10">
+              <label for="bt_understanding_10">10</label>
+            </div>
+          </fieldset>
+        </section>
+        <section class="navigation navigation">
+          <button type="submit" class="button submit">
+            <span>Verzend enquete</span>
+          </button>
+        </section>
+      </form>
+    </article>
+  </main>
+  <footer>
+    <p>Created by Nathan Bommezijn</p>
+  </footer>
+</body>
+<script defer src="script/index.js"></script>
+</html>
