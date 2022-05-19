@@ -11,7 +11,7 @@ main {
 }
 h1 {
   font-size: 2em;
-  margin: 0.67em0;
+  margin: 0.67em;
 }
 hr {
   box-sizing: content-box;
@@ -479,6 +479,11 @@ input[type="radio"] {
 
 input[type="radio"]:checked {
   background-color: currentColor;
+}
+@supports (background-color: currentColor) {
+  input[type="radio"]:checked {
+    background-color: currentColor;
+  }
 }
 
 input[type="radio"]:focus {
