@@ -1,155 +1,126 @@
-# Browser Technologies @cmda-minor-web 20-21
-
-_Robuuste, toegankelijke websites ontwerpen en maken …_
-
-Één van de mooiste [principes](https://www.w3.org/DesignIssues/Principles.html) van het web is dat iedereen met een computer en een browser het web kan gebruik. [Het web is voor iedereen](https://www.youtube.com/watch?v=UMNFehJIi0E). Het is geen gecontroleerde (programmeer) omgeving, je kan er gerust van uit gaan dat niemand precies hetzelfde te zien krijgt als wat jij in je browser ziet. Er zijn technische beperkingen, zoals afmetingen van de browser, grootte van het apparaat, manier van interactie, kwaliteit van de hardware, kwaliteit van het netwerk en er zijn mensen, allemaal verschillende mensen ...
+# Browser Technologies 2122 @CMDA-Minor-Web
 
 In het vak Browser Technologies gaan we onderzoeken wat Progressive Enhancement is en hoe je dit kan toepassen om goede, robuuste, toegankelijke websites te maken. Voor iedereen. Het web is voor iedereen, in dit vak leer je hoe je daarvoor kan zorgen.
 
-### Leerdoelen
+## Leerdoelen van Browser Technologies
 
 - _je leert wat Progressive enhancement is en hoe je dit kan toepassen._
 - _je leert Browser Technologies te onderzoeken, testen en implementeren als enhancement._
 - _je leert hoe je Feature Detection doet en wat je kan doen als een 'feature' niet werkt of wordt ondersteund._
 
-### Opdracht 1 - Wat is Progressive enhancement
+## Documentatie en opdrachten
 
-Voor progressive enhancement had ik vorig jaar met het team verschillende metaforen gezocht en beschreven hoe wat en waarom. Dit staat online op de volgende website;
+Om Browser Technologies te snappen hebben wij theorie moeten leren en begrijpen
 
-[Browser Technologies - team 2](https://browser-technologies-team.vercel.app/)
+- **Opdracht 1: Wat is progressive Enhancement** Het zoeken van metaforen voor progressive enhancement. [Browser Technologies - team 2](https://browser-technologies-team.vercel.app/)
+- **Opdracht 2: Break the web** Letterlijk het web breken aannames die jij maakt valideren en in te leven in de eindgebruiker. Aantal features onderzoeken. [zie wiki.](https://github.com/bommezijn/browser-technologies-2122/wiki/BreakTheWeb)
 
-### Opdracht 2 - Break the web
+# Eindopdracht
 
-Het web breken door features bewust uit te zetten, het doel van de opdracht is erachter te komen dat de aannames die je hebt gemaakt wellicht niet kloppen en om in te leven in de eindgebruiker. Daardoor is de opdracht dat we een aantal features onderzoeken en beschrijven.
+**_Progressive enhancement_** (PE), het van de grond op een website (of webapplicatie) bouwen dat voor iedere gebruiker werkt. Het zal werken in iedere context. Hoe meer de context toe laat hoe beter de website zal werken.  
+PE wordt toegepast door middel van progressief het web te bouwen, als het fundament sterk is, zal de rest ook van zelf sterker zijn. Dus de basis; HTML moet als eerste functioneel zijn. Dan maak je dit vervolgens prettig om te gebruiken, je kijkt niet meer alleen naar HTML, maar het is prettig om naar te kijken. Vervolgens maak je het enhanced, met JavaScript voeg je features toe die het de gebruiker alleen maar makkelijker maakt.
 
-[zie wiki.](https://github.com/bommezijn/browser-technologies-2122/wiki/BreakTheWeb)
+In een lopende verhaal heb ik net eigenlijk de drie lagen benoemd:
 
-### Eindopdracht ✨ Progressive Enhanced Browser Technologie
+1. Functional (HTML)
+1. Usable (HTML + CSS)
+1. Pleasurable (HTML + CSS + JS)
 
-Voor de eindopdracht ontwerp en maak je een interactieve toepassing volgens het principe van Progressive Enhancement. Zorg dat alle gebruikers, met alle browsers, in iedere context de toepassing zo goed mogelijk te zien, horen en/of voelen krijgen. De meest 'enhanced' versie is 'delightful UX', mooi en prettig om te gebruiken.
+Om te controleren als dit op de juiste manier wordt gedaan is **_feature detection_** ook van belang, het controleren als iets wel wordt ondersteund door de browser, dit kan zowel in JavaScript als in CSS.
 
-- [De eindopdracht - Progressive Enhanced Browser Technologie](assignments/eindopdracht.md)
+## Demo
 
-[Rubric](https://icthva.sharepoint.com/:x:/s/FDMCI_EDU_CMD_Minor_Web_Design__Development/ET8k_fDG3VVPvqMkqx2uCusBR5-yeGaKo01meb9bDorLuQ?e=0hbmOk)
+![Screenshot of the first page of the webapp](https://user-images.githubusercontent.com/13199349/169404329-2f16f1d1-9f33-482b-9d42-628076382609.png)
+[Deployed via Heroku, please be patient](https://enigmatic-shelf-01341.herokuapp.com/)
 
-## Eindopdracht
+[Backup demo](https://bommezijn.github.io/browser-technologies-2122/src/)
 
-Het doel van deze opdracht is te leren hoe je een online interactieve toepassing kan maken met behulp van _Progressive Enhancement_ en _Feature Detection_ zodat die het altijd doet ...
-
-### Uitleg
-
-Maak een demo op basis van een user story. Zorg dat alle gebruikers, met alle browsers, in iedere context minimaal de _core functionaliteit_ te zien/horen/voelen krijgen en maximaal een hele goede user experience.
-
-Bouw je demo in 3 lagen, volgens het principe van _Progressive Enhancement_.
-
-Gebruik als enhancement een [Browser Technologie](https://platform.html5.org) die je gaat onderzoeken op functionaliteit, toegankelijkheid en (browser) ondersteuning.
-Je onderzoekt hoe je verschillende _features_ door verschillende browsers worden ondersteund, hoe je voor goede fallback kan zorgen en je test de _features_ op verschillende browsers <del>en het Device Lab</del>.
-
-Polyfills en NPM packages op de client zijn niet toegestaan, op de server kun je doen wat je wil. Wat voor deze opdracht telt, is de HTML/CSS/JavaScript die aan de browser wordt aangeleverd.
-
-Gebruik [caniuse.com](https://caniuse.com), [html5test.com](https://html5test.com), [css3test.com](http://css3test.com) en [kangax.github.io/compat-table/es6/](https://kangax.github.io/compat-table/es6/)
-
-[Rubric](https://docs.google.com/spreadsheets/d/1MV3BWwwg_Zz1n-S_qOM4iSm4gA4M6g0xAxGacyaPuac/)
-
-### Usecase - enquete
-
-> Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Als ik de enquête niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
-
-### Demo
-
-[Link to demo (hosted on heroku so please be patient)](https://enigmatic-shelf-01341.herokuapp.com/)
-
-### Wireflow
+## Wireflow
 
 Basis van de wireflow en de logica van de applicatie. Het doel van de applicatie is om een formulier door de gebruiker in te laten vullen, maar ook om te definieëren wat de verschillende lagen zijn.
 
 ![browser-technologies-2122-02](https://user-images.githubusercontent.com/13199349/162284429-11cca4b8-919a-4a44-a423-54bd22825349.jpeg)
 ![browser-technologies-2122-01](https://user-images.githubusercontent.com/13199349/162284437-cdb3c2aa-650d-4cfa-8fc3-bc46da02f071.jpeg)
 
-### Testing
+**Functional Layer**
+![Functional layer](https://user-images.githubusercontent.com/13199349/169404715-dc60f52c-bd2b-45b1-8a7e-672fa72cd979.png)
+Functionele laag van de enquete, hier zie je de barebone HTML van de webapplicatie.
 
-On which browser does the application run?
-|Browser|Does it work|
-|--|--|
-|Brave (chromium)|✅|
-|Safari (webkit)|✅|
-|iOS|🕑|
-|Android|🕑|
+**Usable Layer**
+![Usable layer](https://user-images.githubusercontent.com/13199349/169405019-3ac5fba5-cef2-4966-868f-bacd9ff65968.png)
+De usable layer, de laag waar het visueel aantrekkelijker wordt voor de gebruiker, zodat deze gebruiker de enquete eerder neigt in te vullen.
 
-#### Test case
+**Pleasurable layer**
+![Pleasurable layer](https://user-images.githubusercontent.com/13199349/169405053-de86a56a-5e8f-4b17-ae4a-01f8884d4ecf.png)
+De laag waar alles bij elkaar komt, de pleasurable layer, hier zal bovenop de vorige twee lagen, een laag JavaScript overheen gaan, dit zou het voor de gebruiker nog prettiger moeten maken.
 
-> Yet to be written.
+## Features
 
-<details>
-<summary>requirements & assignments</summary>
-#### Vereisten voor de Enquete
+Welke features / browser technologies zijn er gebruikt in de demo? op basis van [the web platform](https://platform.html5.org/)
 
-- Studentgegevens (naam + nummer) verplicht
-- Per vak
-  - naam
-  - docent(en)
-  - weken waarin je het vak deed
-  - beoordeling op schaal 1-10 van
-  - lesstof (hoe moeilijk is het)
-  - uitleg (hoe duidelijk is het uitgelegd)
-  - eigen inzicht (hoe goed snap je het)
-- Validatie: alles moet zijn ingevuld voordat je verder mag met het formulier. Geef duidelijke foutmeldingen.
-- Als ik de enquete niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
+**CSS features**
 
-### opdrachten
+- [`color: currentColor` Het herbruiken van een kleur](https://drafts.csswg.org/css-color/)
+- [`@supports` controleren als een feature wel werkt](https://drafts.csswg.org/css-conditional/#at-supports)
+- [`display: flex` positionerings model voor een dimensionale layout](https://drafts.csswg.org/css-flexbox/)
+- [selectors, psuedo classes en meer](https://drafts.csswg.org/selectors/)
+  Usable layer; deze features worden alleen gebruikt in de usable layer voor de styling zodat het prettig is voor de gebruiker maar ook om te controleren als iets wel wordt ondersteund.
 
-- [x] wireflow en/of breakdown-schets met hoe de demo moet gaan werken en hoe hett eruit komt tet zien. Bepaal functional/reliable, usable en pleasurable laag.
-- [x] Onderzoek functional / reliable laag naar semantische HTML elementen.
-- [ ] Kijk voor de usable laag naar gebruiksvriendelijkheid en design patterns die je zou kunnen toepassen
-- [ ] De meest 'enhanced' versie is super vet, gaaf, en prettig om te gebruiken... dit is de pleasurable laag.
+**storage technologies**
 
-> Voor de eindopdracht telt alleen de HTML CSS JS die aan de browser wordt geserveerd. De server / backend boeit niet.
+- [localStorage, het opslaan van data in de browser voor bijvoorbeeld later hergebruiken](https://html.spec.whatwg.org/multipage/webstorage.html#webstorage)
+  pleasurable layer; Voor de case is het belangrijk dat de gebruiker later verder kan gaan. Data wordt tussentijds opgeslagen zodat de gebruiker ieder moment de enquete kan voortzetten.
 
-## Criteria eindopdracht
+**HTML bonus features**
 
-- [ ] Student kan de _Core functionaliteit_ van een use case doorgronden
-- [x] Student kan uitleggen wat _Progressive Enhancement_ en _Feature Detection_ is en hoe dit toe te passen in Web Development
-- [ ] De demo is opgebouwd in 3 lagen, volgens het principe van _Progressive Enhancement_
-- [x] De user experience van de demo is goed
-  - Let op leesbaarheidsregels, contrast en kleuren
-  - Let op gebruiksvriendelijkheid, zoals affordance en feedback op interactieve elementen
-  - De meest 'enhanced' versie is super vet, gaaf en h-e-l-e-maal te leuk om te gebruiken
+- [`classList` Methode om makkelijk classes te manipuleren](https://dom.spec.whatwg.org/#dom-element-classlist)
+- [`data-*` attributen voor attributen die niet de juiste attributen heeft voor de content](https://html.spec.whatwg.org/multipage/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes)
+- [`defer` scripting, het afwachten wanneer de script moet worden ingeladen](https://html.spec.whatwg.org/multipage/scripting.html#attr-script-defer)
+- [`aria-*` semantische informatie van een element voor accessibility](https://www.w3.org/TR/wai-aria/)
+  Functional/Usable layer; Deze features worden toegepast om de HTML toegankelijker te maken voor mensen met bv. een screenreader. Daarnaast worden enkele features ook gebruikt om custom error meldingen te tonen wanneer er iets verkeerd gaat.
 
-Er is een Readme toegevoegd met daarin:
+## Test devices
 
-- [ ] Een link naar de demo.
-- [x] Een (wireflow) schets van de functionaliteit met een beschrijving van de core functionality. Geef ook aan wat de functional/reliable, usable en pleasurable laag.
-- [ ] Een beschrijving van de feature(s)/Browser Technologies die in je demo zijn gebruikt en hoe je dit PE hebt toegepast
-- [ ] Een lijst met vier browsers waarin je hebt getest:
-  - voor de desktop 1 Chromium 1 niet-Chromium browser
-  - voor mobiel 1 iOS + 1 Android OF een Samsung- en een niet-Samsung Android)
-- [ ] een testverslag met
-  - een beschrijving van de feature-lijst die zijn onderzocht
-  - welke browsers de feature(s) wel/niet ondersteunen
-  - welke functionaliteiten zoals JavaScript je aan en uit hebt gezet in de tests
+Voor het testen van de webapplicatie is er gekeken naar de volgende apparaten
+|Device|Chromium|Non-Chromium|works|
+|-|-|-|-|
+|Laptop|Brave|x|✅|
+|Laptop|x||Safari|✅|
+|iOS 15|||||✅|
+|One UI|||||✅|
 
-</details>
+## Test verslag
 
-<!-- Niet boeiende planning voor mij dan. -->
-<!--
-## Planning & programma
+Test verslag dat mijn onderzoek zwart op wit plaatst over hoe en wat ik heb lopen testen op de apparaten.
 
-### Week 2
+### Beschrijving van de feature lijst die zijn onderzocht
 
-In week 2 beginnen we met de eindopdracht. We hebben in week 1 onderzocht wat PE is en welke feautures wel of niet goed worden ondersteund. Deze week gaan we leren hoe je een interactieve toepassing in 3 lagen kan ontwerpen en wat je kan doen als een browser een 'enhancement' niet kan tonen.
+De feature-lijst die ik heb gebruikt in de applicatie zijn groot en deels 'widely covered' wat inhoudt dat het door de meeste browsers (deels) wordt ondersteund. Hoewel dit vooral browser features zijn, zijn er ook enkele features geschreven om de ervaring van de gebruiker te verbeteren.
 
-#### Woensdag 29 maart
+Het gebruik van localStorage; Dit zorgt ervoor dat de gebruiker zijn of haar progressie bij kan houden door de enquete heen. Dit is ook één van de requirements van de opdracht. Deze feature werkt echter wel alleen wanneer JavaScript beschikbaar is. Hiervoor is een feature detection check geschreven in de clientside, dit is deels door mijzelf maar ook door [Mozilla geschreven](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API).
 
-Woensdag krijg je een briefing van de eindopdracht en een college over browsers, en alles (!) wat daarbij hoort. Daarna gaan we aan de slag: als je een interactieve toepassing ontwerpt die alle gebruikers, met alle browsers moeten kunnen zien, dan zul je moeten bedenken hoe je de toepassing in 3 lagen kan opbouwen, eerst bepaal je de core functionaliteit en de user-delight ... schetsen maar!
+Het gebruik van variabelen en andere nieuwere technieken in CSS; dit is op een soort gelijke manier opgevangen als JavaScript, alleen dan met CSS. Door middel van gebruik te maken van de `@supports` selector kan ik een feature detection uitvoeren waar ik kijk als een bepaalde techniek wel beschikbaar is, is dit niet dan zorg ik ervoor met CSS dat dit wordt afgevangen. Een goed voorbeeld hiervan zijn de CSS variabelen.
 
-#### Donderdag 31 maart
+### Welke browser(s) de feature(s) wel/niet ondersteunen
 
-Donderdag gaan we voorbeelden van PE en feature detection bespreken in een college over form validatie. Daarna aan de slag met je ontwerp, in clubjes gaan we je ontwerpideeën bespreken en bedenken hoe je dit in 3 lagen zou kunnen bouwen.
+Op basis van de devices waarmee ik heb kunnen testen werken alle functionaliteiten zoals toebehoren, maar dat is maar een klein deel van de gebruikbaarheid. Hierom heb ik voor iedere functionaliteit [caniuse](https://caniuse.com/) geraadpleegd.
 
-Lezen voor les 4 📖
+| Feature                                                  | Percentage | Notes                                                      |
+| -------------------------------------------------------- | ---------- | ---------------------------------------------------------- |
+| [currentcolor](https://caniuse.com/?search=currentcolor) | 98.12%     | safari 3.2 & IE6-8                                         |
+| [@supports](https://caniuse.com/?search=supports)        | 89.15%     | betere support sinds 2019                                  |
+| [display flex](https://caniuse.com/?search=flex)         | 98.06%     | IE6-9 en Opera 10-11.5                                     |
+| [selectors](https://caniuse.com/?search=selectors)       | 98.17%     | IE6, FF2-3, Safari 3.1                                     |
+| [localStorage](https://caniuse.com/?search=localStorage) | 95.51%     | IE6-7, FF2-3, Safar3.1-3.2 Opera, 10.1                     |
+| [classList](https://caniuse.com/?search=classList)       | 98.01%     | Support is beter sinds 2013                                |
+| [data-\*](https://caniuse.com/?search=data-*)            | 98.19%     | Partial support tot 2012                                   |
+| [defer](https://caniuse.com/?search=defer)               | 97.07%     | Opera Mini geen support, tot 2010 minder support           |
+| [aria-\*](https://caniuse.com/?search=aria)              | 97.2%      | android 2.1-4.3 geen support, voor de rest partial support |
 
-- [Be progressive by Jeremy Keith](https://adactio.com/journal/7706)
+### Welke functionaliteiten zoals JavaScript je aan en uit hebt gezet in de tests
 
-#### Vrijdag 1 april
+op iOS heb ik onder `settings > Safari` de opties voor JavaScript / CSS en meer aan en uit gezet, daarnaast heb ik onder advanced gekeken welke technologieen aan staan en gekeken welke uitstaan.
+Dit kon worden getest via de inspector tool voor iOS Safari.
+![Inspector tool for the iPhone via Safari](https://user-images.githubusercontent.com/13199349/169415680-81bc8338-5a9f-4fe7-849b-821f68c22285.png)
 
-Vrijdag bespreken we in groepjes de vorderingen voor de eindopdracht. Zorg dat je vandaag weet welke browsers (en devices) jij gaat testen. -->
+Ook is er gekeken naar hoe de website zich gedraagt een resource niet geladen kan worden, hiermee kun je bedenken dat bijvoorbeeld de CSS bestand(en) of JavaScript bestand(en) foutief zijn ingeladen. Door middel van progressive enhancement blijft de webapplicatie zich voortdoen zoals verwacht. Je kan de formulier blijven invullen zonder CSS of JavaScript, maar dan wordt de progressie niet opgeslagen.
