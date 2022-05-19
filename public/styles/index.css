@@ -393,8 +393,10 @@ input[type="text"].has-error {
   border-color: rgb(235, 48, 48);
 }
 
-input:invalid {
-  border: 3px dashed red;
+@supports (input: invalid) {
+  input:invalid {
+    border: 3px dashed red;
+  }
 }
 
 input[type="text"]:focus,
@@ -655,12 +657,14 @@ input[type="checkbox"]:checked + label::after {
 
 /* Navigation */
 
-.navigation {
-  display: flex;
-  justify-content: space-between;
-}
+@supports (display: flex) or (display: grid) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+  }
 
-footer {
-  display: flex;
-  justify-content: center;
+  footer {
+    display: flex;
+    justify-content: center;
+  }
 }
