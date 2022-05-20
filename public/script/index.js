@@ -101,8 +101,6 @@ function getNextSibling(el, selector) {
 }
 
 (function () {
-  // let formData = {}
-
   const form = document.querySelector("form");
   const formSections = form.querySelectorAll(".section");
   const formQuestions = form.querySelectorAll(".question"); // Fieldset
@@ -115,7 +113,9 @@ function getNextSibling(el, selector) {
 
   let progressBar, nextBtn, prevBtn;
 
-  // Check localStorage and fill form with data
+  /**
+   * Execute form retrieval, and populate form, other use empty object
+   */
   let formData = retrieveFormData("formData") || {};
 
   if (formData && Object.keys(formData).length !== 0) {
@@ -152,15 +152,15 @@ function getNextSibling(el, selector) {
     });
   }
 
-  createSections();
-  createNavigation();
-  createProgressIndicator();
+  dividePerSection();
+  generateNavCluster();
+  createProgressbar();
 
   // Show one section at a time
   /**
    * @description function creates section from each section in form and hides the ones that aren't currently active
    */
-  function createSections() {
+  function dividePerSection() {
     // Sections
     formSections.forEach(function (section, index) {
       // Make first section active
@@ -177,8 +177,10 @@ function getNextSibling(el, selector) {
     });
   }
 
-  function createNavigation() {
-    // Navigation
+  /**
+   * Create buttons to navigate through sections, hide Submit button until last section
+   */
+  function generateNavCluster() {
     nextBtn = document.createElement("button");
     nextBtn.classList.add("button");
     nextBtn.type = "button";
@@ -203,6 +205,11 @@ function getNextSibling(el, selector) {
     }
   }
 
+  /**
+   * @description Navigation function, shows or hides the previous or next section , also validates question, shows message if empty
+   * @param {String} direction previous or next
+   * @returns 
+   */
   function navigate(direction) {
     return function () {
       const currentSection = document.querySelector(".section.isactive");
@@ -254,8 +261,9 @@ function getNextSibling(el, selector) {
           const isValid = (el) => el === true;
           console.log(isValid);
 
-          // Question is
-          // If any of fieldsValid returns true, return true.
+          /**
+           * Question is if any of the fieldsValid return true, currently it returns true either way
+           */
           if (fieldsValid.some(isValid)) {
             errorMsg.innerText = "";
           } else {
@@ -268,7 +276,9 @@ function getNextSibling(el, selector) {
           updateActiveQuestion(AQ + 1);
         }
 
-        // Is not last question
+        /**
+         * Check if next question is the last question. Hide content accordingly
+         */
         if (nextQuestion) {
           currentQuestion.classList.add("ishidden");
           currentQuestion.classList.remove("isactive");
@@ -290,7 +300,9 @@ function getNextSibling(el, selector) {
           updateActiveQuestion(AQ - 1);
         }
 
-        // Is not last question
+        /**
+         * If it isn't the last question, hide and show next
+         */
         if (prevQuestion) {
           currentQuestion.classList.add("ishidden");
           currentQuestion.classList.remove("isactive");
@@ -321,8 +333,10 @@ function getNextSibling(el, selector) {
     };
   }
 
-  // Progress indicator
-  function createProgressIndicator() {
+  /**
+   * ProgressBar, calculate progression based on value of AQ. 
+   */
+  function createProgressbar() {
     // Create progress bar
     progressBar = document.createElement("div");
     progressBar.classList.add("progress-bar");
@@ -336,11 +350,19 @@ function getNextSibling(el, selector) {
   }
 
   // Set correct width progress bar
+  /**
+   * Calculate correct with of the progressbar.
+   * scaleX num / length of array
+   */
   function updateProgressIndicator() {
     form.dataset.activeQuestion = AQ;
     progressBar.style.transform = `scaleX(${AQ / formQuestions.length})`;
   }
 
+  /**
+   * Function to update the AQ
+   * @param {Num} value a numerical value that changes AQ
+   */
   function updateActiveQuestion(value) {
     AQ = value;
     updateProgressIndicator();
