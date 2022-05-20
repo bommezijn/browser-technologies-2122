@@ -8,6 +8,25 @@ In het vak Browser Technologies gaan we onderzoeken wat Progressive Enhancement 
 - _je leert Browser Technologies te onderzoeken, testen en implementeren als enhancement._
 - _je leert hoe je Feature Detection doet en wat je kan doen als een 'feature' niet werkt of wordt ondersteund._
 
+## Installation
+
+clone browser-technologies-2122 with git
+
+```bash
+#navigate to directory you want to save in
+cd someDirectory/inA/dir
+git clone https://github.com/bommezijn/browser-technologies-2122.git
+cd browser-technologies-2122
+```
+
+Install the project with npm or your preferred package manager
+
+```bash
+  npm install my-project
+  # To start developing run dev
+  npm run dev
+```
+
 ## Documentatie en opdrachten
 
 Om Browser Technologies te snappen hebben wij theorie moeten leren en begrijpen
