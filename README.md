@@ -143,3 +143,16 @@ Dit kon worden getest via de inspector tool voor iOS Safari.
 ![Inspector tool for the iPhone via Safari](https://user-images.githubusercontent.com/13199349/169415680-81bc8338-5a9f-4fe7-849b-821f68c22285.png)
 
 Ook is er gekeken naar hoe de website zich gedraagt een resource niet geladen kan worden, hiermee kun je bedenken dat bijvoorbeeld de CSS bestand(en) of JavaScript bestand(en) foutief zijn ingeladen. Door middel van progressive enhancement blijft de webapplicatie zich voortdoen zoals verwacht. Je kan de formulier blijven invullen zonder CSS of JavaScript, maar dan wordt de progressie niet opgeslagen.
+
+Qua features binnen JavaScript heb ik de code geschreven met zo min mogelijk nieuwe functionaliteiten die zijn geintroduceerd sinds 2015. Toch zijn er enkele doorheen geslipt;
+
+- **[const](https://caniuse.com/?search=const), [let](https://caniuse.com/?search=let)** Om variabelen specifiek te houden voor hun block scope heb ik gebruik gemaakt van deze var alternatieven. De bruikbaarheid volgens [caniuse](https://caniuse.com) is 98.01% en 95.61% respectief. De browsers waar hier een fout zal ontstaan zullen een versie hebben van voor 2015. De fout specifiek in kwestie is dat de variabel declaratie niet als block scope wordt gedefineerd.
+- Een enkele arrow function, Voor compatibility redenen heb ik de meeste functies of callbacks geschreven met `function(){ }` maar het mocht toch zijn dat ik hier en daar een arrow function heb gebruikt. Met name in de serverside heb ik dit gedaan. Alhoewel de [support voor arrow functions](https://caniuse.com/?search=arrow) wel op 94.85% staat, zijn het reeds weer de oudere browsers tot medio 2016 dit niet altijd ondersteunen.
+
+### Toekomstige features
+
+Als ik deze webapplicatie zou uitbreiden naar een volledig product / concept zou meer tijd hebben besteed aan de volgende punten;
+
+- Verbetering in het controleren als een feature wordt ondersteund. Op het moment wordt feature detection toegepast waar ik denk dat een feature niet volledig wordt ondersteund, als dit op meerdere plekken voorkomt schrijf ik dit nog maals, dit volgt het principe DRY niet.
+- Meer tijd besteden aan validatie, validatie werkt niet volledig zoals verwacht, dit heeft waarschijnlijk te maken met het herschrijven van functionaliteit. Een van de bugs die hier aanwezig zijn is dat de serverside variant de problemen voordoet maar de statische variant dit probleem niet voordoet.
+- Als toevoeging zou ik de backend willen uitbreiden om resultaten op een externe locatie op te slaan, zoals een database. Met deze toevoeging zou ik vervolgens een beheerdersomgeving kunnen bouwen waar de beheerder de resultaten kan inzien.
